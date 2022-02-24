@@ -1,0 +1,37 @@
+body {
+    font-size:16px;
+}
+
+#cabecalho {
+    font-size:65px;
+    color:orange;
+}
+
+ul {
+    background-color:orange;
+}
+
+.back {
+    background-color:orange;
+}
+
+h1 {
+    font-family:sans-serif;
+}
+
+p {
+    font-weight:600;
+    font-size:3em;
+    font-style:italic;
+    line-height:75px;
+    text-align:center;
+    text-decoration:underline;
+}
+
+#yellow {
+    color:yellow
+}
+
+#red {
+    color:red
+}
