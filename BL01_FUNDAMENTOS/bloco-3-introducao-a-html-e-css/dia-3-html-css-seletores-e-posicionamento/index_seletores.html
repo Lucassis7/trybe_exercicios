@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>#GoTrybe</title>
+    <style>
+
+        ol {
+            background-color: yellow;
+
+        }
+
+        li.par {
+            color: green;
+        }
+
+        li.impar {
+            text-transform: uppercase;
+        }
+
+        h1, h2, h3 {
+            color: red;
+        }
+
+        h1 em, h2 em, h3 em {
+            font-size: 40px;
+            border: 1px solid black;
+        }
+
+        li {
+            font-size: 20px;
+        }
+
+        li em {
+            font-weight: bold;
+        }
+
+        ul li:nth-of-type(1), ul li:nth-of-type(2), ul li:nth-child(3) {
+            color: blue;
+        }
+
+        ul li.java {
+            background-color: pink;
+            width: 400px;
+            text-align: center;
+            list-style: none;
+            justify-content: center;
+            margin-left: 25%;
+        }
+
+        #aliados li a:hover {
+            font-weight: 700;
+        }
+
+        #aliados li a[href*="stackoverflow"] {
+            color: orange;
+        }
+
+        #aliados li a[href*="w3schools"] {
+            color: greenyellow;
+        }
+
+        #aliados li a[href*="developer"] {
+            color: black;
+        }
+
+        #aliados li a[href*="devdocs"] {
+            color: yellow;
+        }
+
+        #aliados li a[href*="trybe"] {
+            color: green;
+        }
+
+    </style>
+  </head>
+  <body>
+    <h1><em>Combinações e Classes Descendentes</em></h1>
+    <br />
+    <h3>Top 5 frases memoráveis:</h3>
+    <ol>
+      <li class="impar"><em>Com grandes poderes vêm grandes responsabilidades.</em> - Tio Ben (Homem Aranha)</li>
+      <li class="par"><em>Houston, temos um problema.</em> - Jack Swigert</li>
+      <li class="impar"><em>Sempre parece impossível até que esteja feito.</em> - Nelson Mandela</li>
+      <li class="par"><em>Parte da jornada é o fim.</em> - Tony Stark (Homem de Ferro)</li>
+      <li class="impar"><em>Às vezes, o melhor que podemos fazer é começar novamente.</em> - Steve Rogers (Capitão América)</li>
+    </ol>
+    <h3>As maiores linguagens de programação:</h3>
+    <ul>
+      <li>Python</li>
+      <li class="java">Java</li>
+      <li class="java">JavaScript</li>
+      <li>C#</li>
+      <li>C / C++</li>
+    </ul>
+    <h3>Maiores aliados de uma pessoa desenvolvedora:</h3>
+    <ul id="aliados">
+      <li>
+        <a href="https://pt.stackoverflow.com/" target="_blank">StackOverflow</a>
+      </li>
+      <li>
+        <a href="https://www.w3schools.com/" target="_blank">W3Schools</a>
+      </li>
+      <li>
+        <a href="https://developer.mozilla.org/pt-BR/" target="_blank">MDN Web Docs</a>
+      </li>
+      <li>
+        <a href="https://devdocs.io/" target="_blank">DevDocs</a>
+      </li>
+      <li>
+        <a href="https://app.betrybe.com/" target="_blank">Trybe</a>
+      </li>
+    </ul>
+  </body>
+</html>
