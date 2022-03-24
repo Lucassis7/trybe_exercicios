@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TrybeTrip</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: sans-serif;
+        color: gray;
+      }
+
+      header {
+        margin: auto;
+        text-align: center;
+        padding: 30px;
+      }
+
+      form {
+        border: 3px solid black;
+        padding: 20px;
+        width: 40%;
+        margin: auto;
+      }
+
+      #input-name {
+        width: 200px;
+        height: 18px;
+        border: 2px solid gray;
+      }
+
+      #input-email {
+        margin-left: 3px;
+        height: 18px;
+        width: 200px;
+        border: 2px solid gray;
+      }
+
+      p {
+        padding: 10px 0px;
+      }
+
+      #input-area, #input-data, #input-agree-1, #input-agree-2 {
+        border: 2px solid gray;
+        color: gray;
+      }
+
+      #btn-send {
+        margin-left: 28.5%;
+      }
+
+      #btn-send, #btn-reset {
+        background-color: white;
+        width: 120px;
+        height: 30px;
+        border-radius: 7px;
+        margin-top: 10px;
+        border: 2px solid gray;
+        color: gray;
+      }
+
+      textarea {
+        width: 70%;
+        margin-top: 10px;
+      }
+
+      #btn-send:hover, #btn-reset:hover {
+        background-color: gray;
+        color: white;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>TrybeTrip - Concurso</h1>
+    </header>
+      <form action="" method="get">
+        <label for="input-name">Nome:</label>
+        <input type="text" name="nome-completo" id="input-name" minlength="10" maxlength="40" />
+        
+        <br /> <br />
+        <label for="input-email">Email:</label>
+        <input type="email" name="email" id="input-email" minlength="10" maxlength="50" />
+        
+        <br /><br />
+        <input type="radio" name="opcao" id="option-1" value="opcao1"/>
+        <label for="option-1">Cidade</label>
+        
+        <input type="radio" name="opcao" id="option-2" value="opcao2"/>
+        <label for="option-2">Campo</label>
+        
+        <input type="radio" name="opcao" id="option-3" value="opcao3"/>
+        <label for="option-3">Praia</label>
+        
+        <input type="radio" name="opcao" id="option-4" value="opcao4"/>
+        <label for="option-4">Montanhas</label>
+        
+        <br /><br />
+        <label for="input-area" class="label-textarea">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label>
+        <textarea name="" id="input-area" cols="30" rows="10"></textarea>
+        
+        <br /><br />
+        <label for="input-data">Data da Viagem:</label>
+        <input type="date" name="data" id="input-data">
+        
+        <br /><br />
+        <input type="checkbox" name="concordo" id="input-agree-1" />
+        <label for="input-agree-1">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+        <br />
+        <input type="checkbox" name="concordo" id="input-agree-2" />
+        <label for="input-agree-2">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+        <br /> <br />
+        <button type="submit" id="btn-send">Enviar</button>
+        <button type="reset" id="btn-reset">Apagar</button>
+      </form>
+
+      <!-- <button id="btn-erase">Apagar também</button> -->
+
+      <script src="/01_script-form.js"></script>
+  </body>
+</html>
