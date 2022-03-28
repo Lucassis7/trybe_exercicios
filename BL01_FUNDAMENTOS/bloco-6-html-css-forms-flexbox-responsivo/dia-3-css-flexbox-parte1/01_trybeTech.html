@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trybe Tech Gallery</title>
+    <style>
+
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Ubuntu:wght@300;400;700&display=swap');
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: 'Ubuntu', sans-serif;
+      }
+
+      .header-container {
+        display: flex;
+        height: 65px;
+        width: 100%;
+        background-color: rgb(58, 58, 58);
+        color: white;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .trybe-logo {
+        width: 60px;
+        height: 60px;
+      }
+
+      .btn-sign {
+        background-color: rgb(58, 58, 58);
+        color: white;
+        border-style: none;
+        cursor: pointer;
+      }
+
+      .btn-sign:hover {
+        color: gray;
+      }
+
+      .sec-container {
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+      }
+
+      .imgs-container {
+        display: flex;
+        justify-content: center;
+      }
+
+      .box-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(226, 226, 226);
+        margin: 5px;
+        padding: 10px;
+        border: 3px rgb(165, 165, 165);
+        border-radius: 10px;
+        box-shadow: 3px 3px rgb(165, 164, 164);
+      }
+
+      .logo-images {
+        width: 150px;
+        height: 190px;
+        padding: 5px;
+      }
+
+      hr {
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 200px;
+        height: 5px;
+        border-radius: 10px;
+        background-color: gainsboro;
+        box-shadow: 2px 2px gray;
+      }
+
+      footer {
+        display: flex;
+        justify-content: center;
+      }
+
+      .contact-image {
+        width: 20px;
+        height: 20px;
+        margin: 5px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header class="header-container">
+      <img
+        src="/imgs/trybe-logo.jpg"
+        alt="logotipo da trybe"
+        class="trybe-logo"
+      />
+      <h1>TRYBE TECH-GALLERY</h1>
+      <button class="btn-sign">SING UP</button>
+    </header>
+
+    <section class="sec-container">
+      <p>
+        Take a look at some of the technologies wich you will learn in our
+        fundamentals and front-end module!
+      </p>
+    </section>
+
+    <section class="imgs-container">
+      <div class="box-container">
+        <p class="img-title">HTML</p>
+        <img src="/imgs/html-logo.png" alt="logotipo html" class="logo-images"/>
+      </div>
+      <div class="box-container">
+        <p>CSS</p>
+        <img src="/imgs/css-logo.png" alt="logotipo css" class="logo-images"/>
+      </div>
+      <div class="box-container">
+        <p>JAVASCRIPT</p>
+        <img src="/imgs/javaScript-logo.png" alt="logotipo js" class="logo-images"/>
+      </div>
+    </section>
+
+    <section class="imgs-container">
+      <div class="box-container">
+        <p class="img-title">REACT</p>
+        <img src="/imgs/react-logo.png" alt="logotipo react"class="logo-images"/>
+      </div>
+      <div class="box-container">
+        <p>RTL</p>
+        <img src="/imgs/rtl-logo.png" alt="logotipo rtl" class="logo-images" />
+      </div>
+      <div class="box-container">
+        <p>REDUX</p>
+        <img src="/imgs/redux-logo.png" alt="logotipo redux" class="logo-images"/>
+      </div>
+    </section>
+
+    <hr>
+
+    <footer>
+      <a href=""><img src="/imgs/instagram-logo.png" alt="instagram-logo" class="contact-image"></a>
+      <a href=""><img src="/imgs/linked-in-logo.png" alt="linkedin-logo" class="contact-image"></a>
+    </footer>
+
+  </body>
+</html>
